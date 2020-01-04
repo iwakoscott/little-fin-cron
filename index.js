@@ -8,7 +8,7 @@ const PATH_TO_LOG = "/Users/scott/Dropbox/jrnl/log.txt";
 
 require("firebase/firestore");
 
-dotenv.config();
+dotenv.config({ path: __dirname + "/.env" });
 
 firebase.initializeApp({
   apiKey: process.env.FIREBASE_API_KEY,
